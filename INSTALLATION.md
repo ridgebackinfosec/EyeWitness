@@ -11,6 +11,36 @@ EyeWitness now uses **Python virtual environments** for all installations, provi
 
 ## Installation Methods
 
+### 🐍 pipx Installation (All Platforms)
+
+The quickest way to install EyeWitness — no cloning or setup scripts needed:
+
+```bash
+# Install pipx if you don't have it
+python -m pip install --user pipx
+pipx ensurepath
+
+# Install EyeWitness from GitHub
+pipx install git+https://github.com/RedSiege/EyeWitness.git
+```
+
+This creates an `eyewitness` command in an isolated environment. Usage:
+
+```bash
+eyewitness --single https://example.com
+eyewitness -f urls.txt
+eyewitness -x nmap_scan.xml
+```
+
+**Requirements:**
+- Python 3.8+ with pip
+- Chrome/Chromium browser (must be installed separately — pipx only handles Python dependencies)
+
+**Uninstall:**
+```bash
+pipx uninstall eyewitness
+```
+
 ### 🐧 Linux/macOS Installation
 
 ```bash
