@@ -17,11 +17,13 @@ The quickest way to install EyeWitness — no cloning or setup scripts needed:
 
 ```bash
 # Install pipx if you don't have it
-python -m pip install --user pipx
-pipx ensurepath
+apt install pipx
 
 # Install EyeWitness from GitHub
 pipx install git+https://github.com/RedSiege/EyeWitness.git
+
+# Update your PATH environment variable then open a new terminal for the PATH change to take effect
+pipx ensurepath 
 ```
 
 This creates an `eyewitness` command in an isolated environment. Usage:
